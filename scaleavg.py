@@ -20,7 +20,7 @@ def save_alert_to_db(camera_uuid, alert_data):
     }).execute()
 
 # Function to process a single camera stream
-def process_camera(video_path, camera_id, batch_length=60, fps_target=1):
+def process_camera(video_path, camera_id, batch_length=30, fps_target=1):
     print(f"Starting camera {camera_id} - {video_path}")
 
     # Load DETR model and processor
